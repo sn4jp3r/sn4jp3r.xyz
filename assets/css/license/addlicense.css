@@ -1,0 +1,302 @@
+.snContent .dbMain {
+    width: 100%;
+    overflow-x: hidden;
+    flex-direction: column;
+    display: flex;
+}
+
+.snContent .dbMain .dbMain__box {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.dbRow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dbRow .dbRow__box {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 20px;
+}
+
+.dbWidget {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #3a3b3c;
+    border: 1px solid #3a3b3c;
+    background-clip: border-box;
+    border-radius: .35rem;
+    position: relative;
+}
+
+.dbWidget:not(:last-child) {
+    margin: 0 0 2rem 0;
+}
+
+.dbWidget h3.dbWidget__title {
+    border-radius: calc(.35rem - 1px) calc(.35rem - 1px) 0 0;
+    padding: 1rem 1.25rem;
+    margin: 0;
+    color: #fff;
+    background-color: #242526;
+    border-bottom: 1px solid #242526;
+    border-left: 3px solid #f60643;
+}
+
+.dbWidget .dbWidget__content {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    font-size: 15px;
+}
+
+.dbWidget .dbWidget__content .dbStats__list {
+    list-style: none;
+    padding: 0 0 0 20px;
+    margin: 0;
+}
+
+.dbWidget .dbWidget__content .dbStats__list > li:not(:last-child) {
+    margin: 0 0 7px;
+}
+
+.dbWidget .dbWidget__content .dbStats__list > li > i {
+    margin: 0 10px 0 0;
+    color: #f60643;
+}
+
+.dbWidget .dbWidget__content .dbChangelog__list {
+    list-style: none;
+    padding: 0 0 0 20px;
+    margin: 10px 0;
+}
+
+.dbWidget .dbWidget__content .dbChangelog__list > li:not(:last-child) {
+    margin: 0 0 7px;
+}
+
+.dbWidget .dbWidget__content .dbChangelog__list > li > i {
+    margin: 0 10px 0 0;
+    color: #f60643;
+}
+
+.dbText__primary {
+    color: #f60643;
+    font-weight: 700;
+}
+
+
+.dbRow#dbLicense__list .dbRow__box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.dbLicense__success h3.dbWidget__title {
+    border-left: 3px solid #4cf606;
+}
+
+.dbLicense__error h3.dbWidget__title {
+    border-left: 3px solid #ff0000;
+}
+
+.dbRow#dbRules .dbRow__box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.dbRow#dbLicense__list .dbWidget h3.dbWidget__title {
+    cursor: pointer;
+}
+
+.dbContent .dbContent__title .dbContent__button a {
+    background: #f60643;
+    border-radius: 10px 0;
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.dbContent .dbContent__title .dbContent__button a:hover {
+    background: #aa1e32;
+}
+
+
+.dbWidget .dbWidget__content .dbLicense__buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    list-style: none;
+}
+
+.dbWidget .dbWidget__content .dbLicense__buttons > li:not(:last-child) {
+    margin: 0 15px 0 0;
+}
+
+.dbWidget .dbWidget__content .dbLicense__buttons > li > a {
+    background: #f60643;
+    border-radius: 10px 0;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+ul.dbAuth__form {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dbAuth__form--row:not( :last-child ) {
+    margin-bottom: 15px;
+}
+
+.dbAuth__login input {
+    filter: none;
+    color: #fff;
+}
+
+input,
+select,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid rgba( 113, 128, 150, 0.4 );
+    color: #fff;
+    border-radius: 4px;
+    padding: 11px;
+    border-color: rgba( 113, 128, 150, 0.4 );
+    width: 100%;
+    max-width: 100% !important;
+    transition: all .3s ease;
+    background: #242526;
+}
+
+input:focus, input:hover,
+select:focus, select:hover,
+textarea:focus, textarea:hover {
+    border-color: rgba(246, 6, 67, 1);
+    color: #fff;
+}
+
+button {
+    background: #f60643;
+    color: #fff;
+    font-size: 14.0px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 20px;
+    border-radius: 10px 0;
+    border: 1px solid transparent;
+    transition: all .3s ease;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+button:hover, button:focus {
+    background: #aa1e32;
+}
+
+label, input, button, select, textarea {
+    font-size: inherit;
+    font-family: inherit;
+    vertical-align: middle;
+    line-height: inherit;
+    color: #fff;
+}
+
+button, input {
+    overflow: visible;
+    color: #fff;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    color: #fff;
+}
+
+.dbAlert {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 0 0 9px #00000059;
+    border-radius: calc(.35rem - 1px);
+    margin: 0 0 1rem 0;
+}
+
+.dbAlert__success {
+    background: #6edc40;
+}
+
+.dbAlert__danger {
+    background: #f60643;
+}
+
+.dbAlert i {
+    font-size: 20px;
+    margin: 0 15px 0 5px;
+}
+
+.dbRow#dbAdd .dbRow__box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.dbCustom__control--input {
+    display: none;
+}
+
+.dbCustom__control--label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    color: #f60643;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.dbCustom__control--label:hover {
+    background: #f60643;
+    color: #fff;
+}
+

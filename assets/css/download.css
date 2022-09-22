@@ -1,0 +1,281 @@
+/* :root{
+    /* ===== Colors ===== *
+    --body-color: #18191a;
+    --sidebar-color: #242526;
+    --primary-color: #3a3b3c;
+    --primary-color-light: #3a3b3c;
+    --toggle-color: #fff;
+    --text-color: #ccc;
+
+    /* ====== Transition ====== *
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+.dbContent {
+    width: 100%;
+    min-height: 350px;
+    margin: 0 0 0 60px;
+}
+
+.dbContent .dbContent__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+    padding: 0 40px;
+}
+
+.dbContent .dbContent__title h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.dbContent .snMain {
+    width: 100%;
+    overflow-x: hidden;
+    flex-direction: column;
+    display: flex;
+}
+
+.dbContent .snMain .snMain__box {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.snRow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.snRow .snRow__box {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 20px;
+}
+
+.dbWidget {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #212529;
+    background-clip: border-box;
+    border: 1px solid #212529;
+    border-radius: .35rem;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+    position: relative;
+}
+
+.dbWidget:not(:last-child) {
+    margin: 0 0 2rem 0;
+}
+
+.dbWidget h3.dbWidget__title {
+    border-radius: calc(.35rem - 1px) calc(.35rem - 1px) 0 0;
+    padding: 1rem 1.25rem;
+    margin: 0;
+    background-color: #171a1d;
+    border-bottom: 1px solid #171a1d;
+    border-left: 3px solid #f60643;
+}
+
+.dbWidget .dbWidget__content {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    font-size: 15px;
+}
+
+.dbWidget .dbWidget__content .dbStats__list {
+    list-style: none;
+    padding: 0 0 0 20px;
+    margin: 0;
+}
+
+.dbWidget .dbWidget__content .dbStats__list > li:not(:last-child) {
+    margin: 0 0 7px;
+}
+
+.dbWidget .dbWidget__content .dbStats__list > li > i {
+    margin: 0 10px 0 0;
+    color: #f60643;
+}
+
+.dbWidget .dbWidget__content .dbChangelog__list {
+    list-style: none;
+    padding: 0 0 0 20px;
+    margin: 10px 0;
+}
+
+.dbWidget .dbWidget__content .dbChangelog__list > li:not(:last-child) {
+    margin: 0 0 7px;
+}
+
+.dbWidget .dbWidget__content .dbChangelog__list > li > i {
+    margin: 0 10px 0 0;
+    color: #f60643;
+}
+
+.dbText__primary {
+    color: #f60643;
+    font-weight: 700;
+}
+
+.snRow#dbLicense__list .snRow__box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.dbLicense__success h3.dbWidget__title {
+    border-left: 3px solid #4cf606;
+}
+
+.dbLicense__error h3.dbWidget__title {
+    border-left: 3px solid #ff0000;
+}
+
+.snRow#dbRules .snRow__box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.snRow#dbLicense__list .dbWidget h3.dbWidget__title {
+    cursor: pointer;
+}
+
+.dbContent .dbContent__title .dbContent__button a {
+    background: #f60643;
+    border-radius: 10px 0;
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.dbContent .dbContent__title .dbContent__button a:hover {
+    background: #aa1e32;
+}
+
+
+.dbWidget .dbWidget__content .dbLicense__buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    list-style: none;
+}
+
+.dbWidget .dbWidget__content .dbLicense__buttons > li:not(:last-child) {
+    margin: 0 15px 0 0;
+}
+
+.dbWidget .dbWidget__content .dbLicense__buttons > li > a {
+    background: #f60643;
+    border-radius: 10px 0;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+ul.dbAuth__form {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dbAuth__form--row:not( :last-child ) {
+    margin-bottom: 15px;
+}
+
+.dbAuth__login input {
+    filter: none;
+}
+
+input,
+select,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid rgba( 113, 128, 150, 0.4 );
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: rgba(44, 95, 140, 0.08) 0px 3px 4px -1px;
+    border-color: rgba( 113, 128, 150, 0.4 );
+    width: 100%;
+    max-width: 100% !important;
+    transition: all .3s ease;
+}
+
+input:focus, input:hover,
+select:focus, select:hover,
+textarea:focus, textarea:hover {
+    border-color: rgba(246, 6, 67, 1);
+    box-shadow: rgba(246, 6, 67, 0.15) 0 0 0 4px, rgba(44, 95, 140, 0.08) 0px 3px 4px -1px;
+}
+
+button {
+    background: #f60643;
+    color: #fff;
+    font-size: 14.0px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 20px;
+    border-radius: 10px 0;
+    border: 1px solid transparent;
+    transition: all .3s ease;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+button:hover, button:focus {
+    background: #aa1e32;
+}
+
+label, input, button, select, textarea {
+    font-size: inherit;
+    font-family: inherit;
+    vertical-align: middle;
+    line-height: inherit;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+} */

@@ -1,0 +1,192 @@
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body#dbLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    padding-top: 0;
+    margin: 0 auto;
+}
+
+body {
+    background: #edf0f5;
+    color: #1e3343;
+    position: absolute;
+    width: 100%;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    font-size: 13.0px;
+    line-height: 1.5;
+    height: 100%;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+a {
+  color: #f60643;
+  transition: all .3s ease;
+}
+
+a:hover {
+  color: #171717;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.g-recaptcha > div {
+    margin: 0 auto;
+}
+
+:focus {
+    outline: none;
+}
+
+.dbAuth__login {
+    width: 98%;
+    max-width: 450px;
+    padding: 30px;
+    box-shadow: 0px 20px 40px -10px rgb(28 35 49 / 15%), 0px 0px 0px 1px rgb(28 35 49 / 5%);
+    border-radius: 5px;
+    background: #ffffff;
+    border-width: 0;
+}
+
+.dbAuth__logo {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.dbAuth__logo img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.dbAuth__pad {
+    padding: 20px;
+}
+
+ul.dbAuth__form {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dbAuth__form--row:not( :last-child ) {
+    margin-bottom: 15px;
+}
+
+.dbAuth__login input {
+    filter: none;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid rgba( 113, 128, 150, 0.4 );
+    color: inherit;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: rgba(44, 95, 140, 0.08) 0px 3px 4px -1px;
+    border-color: rgba( 113, 128, 150, 0.4 );
+    width: 100%;
+    max-width: 100% !important;
+    transition: all .3s ease;
+}
+
+input:focus, input:hover {
+    border-color: rgba(246, 6, 67, 1);
+    box-shadow: rgba(246, 6, 67, 0.15) 0 0 0 4px, rgba(44, 95, 140, 0.08) 0px 3px 4px -1px;
+}
+
+button {
+    background: #f60643;
+    color: #fff;
+    font-size: 14.0px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 20px;
+    border-radius: 10px 0;
+    border: 1px solid transparent;
+    transition: all .3s ease;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+button:hover, button:focus {
+    background: #aa1e32;
+}
+
+label, input, button, select, textarea {
+    font-size: inherit;
+    font-family: inherit;
+    vertical-align: middle;
+    line-height: inherit;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+}
+
+.dbAlert {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 0 0 9px #00000059;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+    border-radius: calc(.35rem - 1px);
+}
+
+.dbAlert__success {
+    background: #6edc40;
+}
+
+.dbAlert__danger {
+    background: #f60643;
+}
+
+.dbAlert i {
+    font-size: 20px;
+    margin: 0 15px 0 5px;
+}

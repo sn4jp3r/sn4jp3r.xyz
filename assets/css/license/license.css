@@ -1,0 +1,19 @@
+.snContent .snContent__title .snContent__button a {
+    background: #f60643;
+    border-radius: 10px 0;
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.snContent .snContent__title .snContent__button a:hover {
+    background: #aa1e32;
+}
